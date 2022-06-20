@@ -218,6 +218,7 @@ ogsExchange_t* ogsBase_t::AutoSetup(dlong Nshared,
             pairwiseHostTime[0], pairwiseHostTime[1], pairwiseHostTime[2]);
 #endif
 
+#if 0
   /********************************
    * All-to-All
    ********************************/
@@ -323,6 +324,7 @@ ogsExchange_t* ogsBase_t::AutoSetup(dlong Nshared,
     printf("   CrystalRouter  %5.3e %5.3e %5.3e    %5.3e %5.3e %5.3e \n",
             crystalTime[0],     crystalTime[1],     crystalTime[2],
             crystalHostTime[0], crystalHostTime[1], crystalHostTime[2]);
+#endif
 #endif
 
   if (rank==0 && verbose) {

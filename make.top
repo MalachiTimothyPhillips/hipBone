@@ -40,9 +40,9 @@ export HIPBONE_BLAS_LIB=-L${OPENBLAS_DIR} -lopenblas
 export OCCA_DIR=${HIPBONE_DIR}/occa
 
 #compilers to use for C/C++
-export HIPBONE_CC = mpicc
-export HIPBONE_CXX= mpic++
-export HIPBONE_LD = mpic++
+export HIPBONE_CC = cc
+export HIPBONE_CXX= CC
+export HIPBONE_LD = CC
 
 export HIPBONE_INCLUDES=-I${HIPBONE_INCLUDE_DIR} -I${OCCA_DIR}/include
 export HIPBONE_LIBS= ${HIPBONE_BLAS_LIB}  \

@@ -154,6 +154,7 @@ void mesh_t::GatherScatterSetup() {
   bool unique = true; //flag a unique node in every gather node
   ogsMasked.Setup(Nelements*Np, maskedGlobalIds,
                   comm, ogs::Signed, ogs::Auto,
+                  //comm, ogs::Signed, ogs::Pairwise,
                   unique, verbose, platform);
 
   gHalo.SetupFromGather(ogsMasked);

@@ -48,7 +48,7 @@ void hipBone_t::Run(){
   //NekBone-like RHS
   forcingKernel(N, o_r);
 
-  int maxIter = 100;
+  int maxIter = 5000;
   int verbose = platform.settings().compareSetting("VERBOSE", "TRUE") ? 1 : 0;
 
   timePoint_t startTime = GlobalPlatformTime(platform);
